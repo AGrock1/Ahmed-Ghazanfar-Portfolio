@@ -35,6 +35,7 @@ AOS.init({
         setTimeout(function() { 
             if($('#ftco-loader').length > 0) {
                 $('#ftco-loader').removeClass('show');
+				$('body').css('overflow', 'auto');
             }
         }, 1);
     };
