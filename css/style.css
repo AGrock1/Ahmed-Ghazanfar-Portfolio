@@ -9744,3 +9744,14 @@ textarea.form-control {
     font-size: 14px;
   }
 }
+/* ===== Mobile Scrolling Fix ===== */
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.js-fullheight {
+  height: auto !important;
+  min-height: 100vh; /* still fills screen on larger devices */
+}
