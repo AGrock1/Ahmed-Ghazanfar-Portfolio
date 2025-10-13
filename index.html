@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
+<style>
       /* Fix for navbar on scroll */
       #ftco-navbar.scrolled {
         background: #1a1a1a !important;
@@ -80,13 +80,16 @@
 
       /* Prepare hero section for absolute positioning */
       .hero {
-        height: 90vh;
+        height: 100vh; /* Changed to 100vh for full-screen height */
         position: relative; 
       }
-      
+
       /* Push hero text up from the center */
       .slider-text {
-        padding-bottom: 15vh; /* Pushes content up. Adjust 15vh to your liking. */
+        padding-bottom: 0; /* Remove padding-bottom */
+        display: flex;
+        align-items: center;
+        height: 100%;
       }
 
       /* Animated scroll-down button styles */
@@ -121,6 +124,17 @@
         }
         60% {
           transform: translateX(-50%) translateY(-10px);
+        }
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        .hero {
+          height: auto; /* Let the content define the height */
+          padding: 150px 0; /* Add padding for spacing */
+        }
+        .slider-text {
+          padding-bottom: 0;
         }
       }
     </style>
