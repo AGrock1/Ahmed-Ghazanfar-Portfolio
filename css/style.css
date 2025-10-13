@@ -9751,6 +9751,10 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
+.js-fullheight {
+  height: 100vh;
+}
+
 /* ===== Mobile Scrolling Fix ===== */
 @media (max-width: 767.98px) {
   .js-fullheight {
