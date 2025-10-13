@@ -9757,3 +9757,41 @@ html, body {
     height: auto !important;
   }
 }
+/* ===================================================================
+ * Mobile-Specific Styles
+ * =================================================================== */
+
+@media (max-width: 991.98px) {
+  /* --- Hero Section --- */
+  .hero {
+    height: auto;
+  }
+
+  .slider-text {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+
+  .home-slider .slider-item .one-third {
+    width: 100%;
+    height: 400px;
+    order: 1 !important; /* This will make the text appear first */
+  }
+
+  .home-slider .slider-item .one-forth {
+    width: 100%;
+    order: 2 !important; /* This will make the image appear second */
+    padding: 2em;
+    text-align: center;
+  }
+
+  /* --- Scrolling --- */
+  html, body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .js-fullheight {
+    height: auto !important;
+  }
+}
