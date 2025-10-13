@@ -9751,10 +9751,6 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-.js-fullheight {
-  height: 100vh;
-}
-
 /* ===== Mobile Scrolling Fix ===== */
 @media (max-width: 767.98px) {
   .js-fullheight {
@@ -9766,7 +9762,6 @@ html, body {
  * =================================================================== */
 
 @media (max-width: 991.98px) {
-  /* --- Hero Section --- */
   .hero {
     height: auto;
   }
@@ -9779,23 +9774,15 @@ html, body {
   .home-slider .slider-item .one-third {
     width: 100%;
     height: 400px;
-    order: 1 !important; /* This will make the text appear first */
   }
 
   .home-slider .slider-item .one-forth {
     width: 100%;
-    order: 2 !important; /* This will make the image appear second */
     padding: 2em;
     text-align: center;
   }
-
-  /* --- Scrolling --- */
-  html, body {
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-  }
-
-  .js-fullheight {
-    height: auto !important;
+  
+  .home-slider .slider-item .slider-text {
+    height: auto;
   }
 }
