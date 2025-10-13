@@ -19,6 +19,20 @@ AOS.init({
     });
     */
 
+    // ✅ Fixed version for mobile scrolling
+    var fullHeight = function() {
+      if ($(window).width() > 768) {  // only force height on desktop
+        $('.js-fullheight').css('height', $(window).height());
+        $(window).resize(function(){
+          $('.js-fullheight').css('height', $(window).height());
+        });
+      } else {
+        $('.js-fullheight').css('height', 'auto'); // allow scrolling on mobile
+      }
+    };
+    fullHeight();
+    $(window).resize(fullHeight);
+
     // ✅ Safer loader that always unlocks scroll
     var loader = function() {
         setTimeout(function() { 
