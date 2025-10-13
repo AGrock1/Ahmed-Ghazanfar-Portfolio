@@ -9758,50 +9758,41 @@ html, body {
   }
 }
 /* ===================================================================
- * Final Mobile Fix - 10/13/2025
+ * Mobile Hero Section Fix - Final
  * =================================================================== */
 @media (max-width: 991.98px) {
-  
-  /* Allow hero section to have natural height */
-  .hero {
+
+  /* Allows the page to scroll */
+  .hero,
+  .home-slider .slider-item,
+  .home-slider .slider-item .slider-text {
     height: auto !important;
   }
 
-  /* Adjust padding for mobile view */
-  .home-slider .slider-item .slider-text {
-    height: auto;
-    padding: 6em 0;
-  }
-  
-  /* Force the text and image sections to stack vertically */
-  .slider-text.align-items-center.justify-content-end {
+  /* Removes the large empty space at the top */
+  .slider-text.row {
+    padding-top: 100px; /* Adds space from the navbar */
+    padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
+    flex-direction: column; /* Stacks the image and text vertically */
   }
 
-  /* Make the image container visible and give it a fixed height */
-  .home-slider .slider-item .one-third.js-fullheight {
-    height: 450px !important;
+  /* Ensures the image is visible */
+  .one-third.img {
+    height: 400px !important; /* Sets a visible height for the image area */
     width: 100%;
-    order: 1; /* Make image appear first */
+    order: 1; /* Puts image first */
   }
 
-  /* Style the text container */
-  .home-slider .slider-item .one-forth {
-    order: 2; /* Make text appear second */
+  /* Formats the text section below the image */
+  .one-forth {
     width: 100%;
-    padding: 2em 1em 0 1em; /* Add some spacing */
+    order: 2; /* Puts text second */
+    padding: 30px 15px;
   }
   
-  /* Center the text content */
-  .one-forth .text {
-    text-align: center;
-  }
-
-  /* Hide the scroll-down arrow on mobile */
+  /* Hides the down-arrow button on mobile */
   .scroll-down-btn {
-    display: none;
+      display: none;
   }
 }
