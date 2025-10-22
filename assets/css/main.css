@@ -2554,6 +2554,5 @@ section,
   /* Add your styles here */
 }
 .contact-item {
-  overflow-wrap: break-word;
-  word-wrap: break-word; /* Fallback for older browsers */
+  word-break: break-all;
 }
