@@ -2567,3 +2567,8 @@ section,
      It allows the span to shrink smaller than its content. */
   min-width: 0; 
 }
+@media (max-width: 576px) {
+  .contact-item {
+    font-size: 14px; /* Adjust this value as needed */
+  }
+}
