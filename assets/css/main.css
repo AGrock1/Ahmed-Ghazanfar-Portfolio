@@ -2553,20 +2553,6 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-.contact-item span {
-  /* 1. Prevent the text from wrapping to a new line */
-  white-space: nowrap; 
-
-  /* 2. Hide the part of the text that overflows */
-  overflow: hidden; 
-
-  /* 3. Add the "..." at the end */
-  text-overflow: ellipsis; 
-
-  /* 4. This is the magic key for flex items:
-     It allows the span to shrink smaller than its content. */
-  min-width: 0; 
-}
 @media (max-width: 576px) {
   .contact-item {
     font-size: 14px; /* Adjust this value as needed */
